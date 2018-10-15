@@ -64,7 +64,7 @@ function wp_mode_maintenance(){
 	}
 }
 
-if ( is_admin()) {
+if ( is_admin() ) {
 	add_action( 'admin_menu', 'emm_menu' );
 	add_action( 'admin_init', 'emm_register_settings' );
 }
